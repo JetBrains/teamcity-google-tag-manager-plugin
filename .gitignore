@@ -1,0 +1,7 @@
+TeamCityDistr
+/target/
+/gtm-build/target/
+/gtm-server/target/
+.idea/
+.DS_Store
+*.iml
