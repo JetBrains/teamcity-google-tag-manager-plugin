@@ -1,9 +1,7 @@
 # TeamCity Google Tag Manager Plugin
 [![JetBrains incubator project](http://jb.gg/badges/incubator-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
-The initial version of the plugin allowing to add Google Tag Manager to the TeamCity UI pages. 
-It's not ready for public announcement and is used on https://teamcity.jetbrains.com
-
+The simple plugin allowing to add Google Tag Manager to the TeamCity UI pages. 
 The plugin is compatible with TeamCity starting from 2017.2.2
 
 ## Configuration
