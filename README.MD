@@ -4,7 +4,7 @@
 The simple plugin allowing to add Google Tag Manager to the TeamCity UI pages. 
 The plugin is compatible with TeamCity starting from 2017.2.2
 
-Download plugin [here](https://teamcity.jetbrains.com/guestAuth/repository/download/TeamCityPluginsByJetBrains_TeamcityGoogleTagManagerPlugin_Build/.lastFinished/google-tag-manager.zip)
+Download [latest plugin binary](https://teamcity.jetbrains.com/guestAuth/repository/download/TeamCityPluginsByJetBrains_TeamcityGoogleTagManagerPlugin_Build/.lastFinished/google-tag-manager.zip)
 
 ## Configuration
  * Put the following configuration in `<TeamCity Data Directory>/config/googleTagManager/settings.xml` file 
