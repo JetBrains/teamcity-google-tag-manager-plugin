@@ -6,4 +6,5 @@
 
     <bean class="org.jetbrains.teamcity.GoogleTagManagerConfig"/>
     <bean class="org.jetbrains.teamcity.GoogleTagManagerInterceptor"/>
+    <bean class="org.jetbrains.teamcity.GoogleTagManagerCSP"/>
 </beans>
