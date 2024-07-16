@@ -1,5 +1,6 @@
 package org.jetbrains.teamcity;
 
+import jetbrains.buildServer.controllers.AuthorizationInterceptor;
 import jetbrains.buildServer.controllers.BaseController;
 import jetbrains.buildServer.controllers.interceptors.TeamCityHandlerInterceptor;
 import jetbrains.buildServer.serverSide.TeamCityProperties;
@@ -28,10 +29,13 @@ public class GoogleTagManagerInterceptor implements TeamCityHandlerInterceptor {
 
     public GoogleTagManagerInterceptor(@NotNull GoogleTagManagerConfig config,
                                        @NotNull WebControllerManager webControllerManager,
-                                       @NotNull PluginDescriptor descriptor) {
+                                       @NotNull PluginDescriptor descriptor,
+                                       @NotNull AuthorizationInterceptor authorizationInterceptor) {
         this.config = config;
         webControllerManager.registerController(GTM_HEAD_URL, new GtmController(descriptor, "googleTagManagerHead.jsp"));
         webControllerManager.registerController(GTM_BODY_URL, new GtmController(descriptor, "googleTagManagerBody.jsp"));
+        authorizationInterceptor.addPathNotRequiringAuth(GTM_HEAD_URL);
+        authorizationInterceptor.addPathNotRequiringAuth(GTM_BODY_URL);
     }
 
     public boolean preHandle(final HttpServletRequest request, final HttpServletResponse response) {
